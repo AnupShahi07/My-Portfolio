@@ -8,7 +8,7 @@ based on React.js and deployed in Vercel
 
 As a student I love to code and wanted to be a Developer.
 used tailwind CSS and at also take help from AI.
-changed or updated my portfolio 3rd time.😁
+I have changed or updated my portfolio 3rd time.😁
 
 ---
 
