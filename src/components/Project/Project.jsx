@@ -11,7 +11,7 @@ function Projects() {
             desc: "A website that helps users to report lost or found items, search exisiting listings, and use map-based geolocation to improve item recovery.",
             tech: ["Full-Stack web", "HTML5", "CSS", "JS", "Python (Flask)", "MYSQL", "Firebase and Firestore."],
             img: lostImg,
-            github: "https://github.com/bhanu0221/Online-lost-found-system-website..git",
+            github: "https://github.com/AnupShahi07/Online-lost-found-system-website..git",
             Live: "",
         },
         {
@@ -19,7 +19,7 @@ function Projects() {
             desc: "A website that gives you real-time news and also provides different categories of News in real-time like Crypto, Sports, social etc.",
             tech: ["React.js with Vite", "HTML5, CSS", "JS", "Public APIs.", "Gnews API", "NewsData.io API"],
             img: newsImg,
-            github: "https://github.com/bhanu0221/NewsHive-Project-Frontend.git",
+            github: "https://github.com/AnupShahi07/NewsHive-Project-Frontend.git",
             Live: "https://news-hive-frontend.netlify.app/",
 
         },
@@ -28,7 +28,7 @@ function Projects() {
             desc: "Currency Converter & Crypto price rate real-time updates. Real-Time Currency Conversion: Get up-to-the-minute exchange rates for various fiat currencies.",
             tech: ["React.js with Vite", "HTML5, CSS", "JS", "CoinGecko API", "Frankfurter API", "Slingacademy API."],
             img: CurrencyImg,
-            github: "https://github.com/bhanu0221/React-basic-project.git",
+            github: "https://github.com/AnupShahi07/React-basic-project.git",
             Live: "https://vite-react-basic.netlify.app/",
         }
     ];
