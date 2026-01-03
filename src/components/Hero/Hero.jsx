@@ -15,8 +15,8 @@ function Hero() {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid gap-8 md:grid-cols-2 items-center">
                     <div>
-                        <h2 className="text-4xl sm:text-4xl font-extrabold leading-tight">
-                            Hi — I'm <span className="text-indigo-600">Anup Shahi</span>, an Aspiring Frontend or Software Developer.
+                        <h2 className="text-3xl sm:text-3xl font-extrabold leading-tight">
+                            Hello, I'm <span className="text-indigo-600">Anup Shahi</span>, an aspiring Frontend and Software Developer, currently focused on learning and applying modern web technologies.
                         </h2>
                         <p className="mt-4 text-gray-900 max-w-xl">
                             “A fresher exploring web development and building my foundation in React, JavaScript, and UI design.”

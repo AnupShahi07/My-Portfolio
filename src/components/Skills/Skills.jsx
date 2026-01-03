@@ -7,7 +7,7 @@ function Skills() {
         },
         {
             title: "Backend",
-            items: "Python, Node.js (basic Express.js)"
+            items: "Python, Node.js (exploring Express.js)"
         },
         {
             title: "Database",
@@ -19,7 +19,7 @@ function Skills() {
         },
         {
             title: "AI Tools",
-            items: "ChatGPT, Copilot, BlackBox AI, Claude"
+            items: "ChatGPT, Copilot, BlackBox AI, Claude etc."
         }
     ];
 
