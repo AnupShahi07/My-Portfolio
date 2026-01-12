@@ -1,16 +1,20 @@
 import React from "react";
-
 function About() {
   return (
     <section id="about" className="py-20 rounded-2xl p-6 ">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center">About me</h2>
         <p className="mt-4 text-gray-900 overflow-hidden text-ellipsis ">
-         I am a BCA graduate from Dehradun, based in Haridwar, Uttarakhand, with a strong interest in frontend web development. I enjoy building practical projects, learning modern technologies, and improving my React and UI development skills. I am seeking an entry-level role where I can learn, grow, and contribute to real-world software solutions.
+          I am a BCA graduate from DBS Global University Dehradun. I live in
+          Haridwar, Uttarakhand and having a strong interest in frontend web
+          development. I enjoy building practical projects, learning modern
+          technologies, and improving my React and UI development skills. I am
+          seeking an entry-level role where I can learn, grow, and contribute to
+          real-world software solutions.
         </p>
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
-          <div className="p-6 rounded-2xl shadow-2xl hover:bg-cyan-50 bg-white/5 backdrop-blur-md">
+          <div className="p-6 rounded-2xl shadow-2xl hover:bg-blue-100 bg-white/5 backdrop-blur-md cursor-pointer">
             <h3 className="font-semibold text-xl">Education</h3>
             <ul className="mt-2 text-sm text-gray-900 ">
               <li>Bachelor of Computer Applications (BCA)</li>
@@ -30,7 +34,7 @@ function About() {
             </ul>
           </div>
 
-          <div className="p-6 rounded-2xl shadow-2xl hover:bg-cyan-50 bg-white/5 backdrop-blur-md">
+          <div className="p-6 rounded-2xl shadow-2xl hover:bg-blue-100 bg-white/5 backdrop-blur-md cursor-pointer">
             <h3 className="font-semibold">What I'm Currently Doing</h3>
             <p className="mt-2 text-sm text-gray-900">
               I'm currently working on several projects and enhance my skills.

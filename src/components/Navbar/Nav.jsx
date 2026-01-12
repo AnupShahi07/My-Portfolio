@@ -1,74 +1,99 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Navbar() {
-    const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
+  const sections = [
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "skills", label: "Skills" },
+    { id: "projects", label: "Projects" },
+    { id: "certificates", label: "Certificates" },
+    { id: "contact", label: "Contact" },
+  ];
 
-    const sections = [
-        { id: 'home', label: 'Home' },
-        { id: 'about', label: 'About' },
-        { id: 'skills', label: 'Skills' },
-        { id: 'projects', label: 'Projects' },
-        { id: 'certificates', label: 'Certificates' },
-        { id: 'contact', label: 'Contact' },
-    ];
+  // Scroll to the element with the given id smoothly.
+  // Also closes the mobile menu if it was open.
+  function scrollToId(id) {
+    const el = document.getElementById(id);
+    if (!el) return; // nothing to do if element missing
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    setMobileOpen(false);
+  }
 
-    // Scroll to the element with the given id smoothly.
-    // Also closes the mobile menu if it was open.
-    function scrollToId(id) {
-        const el = document.getElementById(id);
-        if (!el) return;  // nothing to do if element missing
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        setMobileOpen(false);
-    }
+  function clickHandler(e) {
+    e.preventDefault();
+    scrollToId("home"); // calling the function
+  }
 
-    function clickHandler(e){
-        e.preventDefault();
-        scrollToId('home');  // calling the function
-    }
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-blue-100 backdrop-blur-sm shadow-sm">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex-shrink-0">
+            <a
+              href="#home"
+              onClick={clickHandler}
+              className="font-extrabold text-xl text-indigo-600"
+            >
+              {" "}
+              ✌️ My Portfolio
+            </a>
+          </div>
 
-    return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-blue-100 backdrop-blur-sm shadow-sm">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-16">
+          {/* for Desktop links (hidden on small screens) */}
+          <nav className="hidden md:flex space-x-6 items-center">
+            {sections.map((s) => (
+              <button
+                type="button"
+                key={s.id}
+                onClick={() => scrollToId(s.id)}
+                className="py-2 text-xl font-medium text-gray-900 cursor-pointer hover:text-indigo-600"
+              >
+                {s.label}
+              </button>
+            ))}
+          </nav>
 
-                    <div className="flex-shrink-0">
-                        <a href="#home" onClick={clickHandler} className="font-extrabold text-xl text-indigo-600"> ✌️ My Portfolio</a>
-                    </div>
+          {/* Mobile hamburger (visible on small screens) */}
+          <div className="md:hidden">
+            <button
+              type="button"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-expanded={mobileOpen}
+              aria-label="Toggle menu"
+              className="p-2 rounded-md focus:outline-none"
+            >
+              {/* Font Awesome icons from CDN*/}
+              <i
+                className={`fa-solid ${
+                  mobileOpen ? "fa-xmark" : "fa-bars"
+                } text-2xl`}
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
 
-                    {/* for Desktop links (hidden on small screens) */}
-                    <nav className="hidden md:flex space-x-6 items-center">
-                        {sections.map((s) => (
-                            <button type="button" key={s.id} onClick={() => scrollToId(s.id)} className="py-2 text-sm font-medium text-gray-700 hover:text-indigo-600">
-                                {s.label}
-                            </button>
-                        ))}
-                    </nav>
-
-                    {/* Mobile hamburger (visible on small screens) */}
-                    <div className="md:hidden">
-                        <button type="button" onClick={() => setMobileOpen(!mobileOpen)} aria-expanded={mobileOpen} aria-label="Toggle menu" className="p-2 rounded-md focus:outline-none">
-                            {/* Font Awesome icons from CDN*/}
-                            <i className={`fa-solid ${mobileOpen ? 'fa-xmark' : 'fa-bars'} text-2xl`}></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            {/* Mobile menu panel (simple list) */}
-            {mobileOpen && (
-                <div className="md:hidden bg-blue-100">
-                    <div className="px-4 pt-4 pb-6 space-y-2">
-                        {sections.map((s) => (
-                            <button type="button" key={s.id} onClick={() => scrollToId(s.id)} className="block w-full text-left py-2 px-2 rounded-md text-black">
-                                {s.label}
-                            </button>
-                        ))}
-                    </div>
-                </div>
-            )}
-        </header>
-    );
+      {/* Mobile menu panel (simple list) */}
+      {mobileOpen && (
+        <div className="md:hidden bg-blue-100">
+          <div className="px-4 pt-4 pb-6 space-y-2">
+            {sections.map((s) => (
+              <button
+                type="button"
+                key={s.id}
+                onClick={() => scrollToId(s.id)}
+                className="block w-full text-left py-2 px-2 rounded-md text-black"
+              >
+                {s.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </header>
+  );
 }
 
 export default Navbar;
