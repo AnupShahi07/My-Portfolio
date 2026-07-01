@@ -17,15 +17,11 @@ function Hero() {
           <div>
             <h2 className="text-3xl sm:text-3xl font-extrabold leading-tight">
               Hello, I'm <span className="text-indigo-600">Anup Shahi</span>, an
-              aspiring Frontend Developer, currently focused on learning and
+              aspiring Web Developer, currently focused on learning and
               applying modern web technologies.
             </h2>
             <p className="mt-4 text-gray-900 max-w-xl">
-              “I'm a fresher exploring web development and building my
-              foundation in React, JavaScript, and UI design.” I'm learning to
-              build clean and responsive web apps using React, Vite, and modern
-              CSS. I enjoy creating simple, user-friendly interfaces and
-              improving my skills with every project.
+              Technology has always fascinated me, which inspired me to pursue frontend development. I enjoy building responsive and user-friendly web applications with React, JavaScript, Vite, and modern CSS while continuously improving my skills through real-world projects.
             </p>
 
             {/* buttons */}

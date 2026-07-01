@@ -5,12 +5,7 @@ function About() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center">About me</h2>
         <p className="mt-4 text-gray-900 overflow-hidden text-ellipsis ">
-          I am a BCA graduate from DBS Global University Dehradun. I live in
-          Haridwar, Uttarakhand and having a strong interest in frontend web
-          development. I enjoy building practical projects, learning modern
-          technologies, and improving my React and UI development skills. I am
-          seeking an entry-level role where I can learn, grow, and contribute to
-          real-world software solutions.
+          I graduated with a BCA from DBS Global University, Dehradun, and currently work at MPS Limited. Although my current role is not in software development, my passion for technology inspired me to pursue frontend development on my own. I enjoy building projects with React, JavaScript, Vite, and modern CSS, and each project helps me learn something new. In my free time, I continue exploring modern web technologies and improving my skills by creating practical, user-friendly applications. My goal is to grow into a frontend developer and contribute to building meaningful digital experiences.
         </p>
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
@@ -37,10 +32,7 @@ function About() {
           <div className="p-6 rounded-2xl shadow-2xl hover:bg-blue-100 bg-white/5 backdrop-blur-md cursor-pointer">
             <h3 className="font-semibold">What I'm Currently Doing</h3>
             <p className="mt-2 text-sm text-gray-900">
-              I'm currently working on several projects and enhance my skills.
-              Also build a portfolio. I enjoy learning new technologies and
-              applying them in practical scenarios. My goal is to become a
-              proficient web/software developer.
+              I'm currently expanding my knowledge of frontend development by learning modern web technologies and strengthening my skills in React, JavaScript, Vite, and modern CSS. My goal is to build intuitive web applications and grow into a frontend developer.
             </p>
 
             <p className="pt-3">
